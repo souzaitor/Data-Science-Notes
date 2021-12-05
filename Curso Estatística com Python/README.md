@@ -251,7 +251,7 @@ df.quantile([i / 10 for i in range(1, 100)])
 
 O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por IIQ. As posições relativas de Q1, Mediana e Q3 dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
 
-![](./Imagens/img005.png)
+![](./Imagens/img0051.png)
 
 #### Plotando um Boxplot
 ```python
@@ -271,7 +271,7 @@ ax.set_title('Título', fontsize=18)
 ax.set_xlabel('Legenda eixo X', fontsize=14)
 ax
 ```
-![](./Imagens/img006.png)
+![](./Imagens/img0061.png)
 
 [Voltar ao Topo](#tabela-de-conteúdo)
 ## Medidas de Dispersão
@@ -401,7 +401,7 @@ print('%0.8f' % probabilidade)
 ### Distribuição Normal
 A distribuição normal é uma das mais utilizadas em estatística. É uma distribuição contínua, onde a distribuição de frequências de uma variável quantitativa apresenta a forma de sino e é simétrica em relação a sua média.
 
-![](./Imagens/img001.png)
+![](./Imagens/img0012.png)
 
 #### Características
 1. É simétrica em torno da média;
@@ -422,10 +422,10 @@ Onde:
 
 A probabilidade é obtida a partir da área sob a curva, delimitada pelos limites inferior e superior especificados. Um exemplo pode ser visto na figura abaixo.
 
-![](./Imagens/img002.png)
+![](./Imagens/img0022.png)
 
 #### Problema A - Identificação da área sob a curva
-![](./Imagens/img004.png)
+![](./Imagens/img0042.png)
 
 ```python
 from scipy.stats import norm
@@ -434,7 +434,7 @@ probabilidade = norm.cdf(Z)
 ```
 
 #### Problema B - Identificação da área sob a curva
-![](./Imagens/img015.png)
+![](./Imagens/img0052.png)
 
 ```python
 from scipy.stats import norm
@@ -449,7 +449,7 @@ probabilidade = norm.cdf(Z_superior) - norm.cdf(Z_inferior)
 ```
 
 #### Problema C - Identificação da área sob a curva
-![](./Imagens/img006.png)
+![](./Imagens/img0062.png)
 
 ```python
 from scipy.stats import norm
@@ -496,7 +496,7 @@ O **nível de confiança** representa o grau de confiabilidade do resultado da e
 
 O **nível de confiança** de uma estimativa pode ser obtido a partir da área sob a curva normal como ilustrado na figura abaixo.
 
-![](./Imagens/img007.png)
+![](./Imagens/img0072.png)
 
 ### Erro Inferencial
 O **erro inferencial** é definido pelo **desvio padrão das médias amostrais** ![formula](https://render.githubusercontent.com/render/math?math=%5Csigma_%5Cbar%7Bx%7D) e pelo **nível de confiança** determinado para o processo.
