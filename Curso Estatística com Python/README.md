@@ -1,48 +1,43 @@
 # Resumo Estatística
-***
-
 ## Tabela de Conteúdo
-***
-
 - [Tipos de Dados](#tipos-de-dados)
-  - [Variáveis Quantitativas](#variaveis-quantitativas)
-  - [Variáveis Qualitativas](#variaveis-qualitativas)
-- [Distribuição de Frequências](#distribuio-de-frequncias)
-  - [Distribuição de Frequências para Variáveis Qualitativas](#distribuiçao-de-frequencias-para-variaveis-qualitativas)
-  - [Distribuição de Frequências para Variáveis Quantitativas (Classes Personalizadas)](#distribuiçao-de-Frequencias-para-variveis-quantitativas-classes-personalizadas)
-  - [Distribuição de Frequências para Variáveis Quantitativas (Classes de Amplitude fixa)](#distribuiçao-de-frequencias-para-variaveis-quantitativas-classes-de-amplitude-fixa)
+  - [Variáveis Quantitativas](#variáveis-quantitativas)
+  - [Variáveis Qualitativas](#variáveis-qualitativas)
+- [Distribuição de Frequências](#distribuição-de-frequências)
+  - [Distribuição de Frequências para Variáveis Qualitativas](#distribuição-de-frequências-para-variáveis-qualitativas)
+  - [Distribuição de Frequências para Variáveis Quantitativas (Classes Personalizadas)](#distribuição-de-frequências-para-variáveis-quantitativas-classes-personalizadas)
+  - [Distribuição de Frequências para Variáveis Quantitativas (Classes de Amplitude fixa)](#distribuição-de-frequências-para-variáveis-quantitativas-classes-de-amplitude-fixa)
   - [Histograma](#histograma)
-- [Medidas de Tendência Central](#medidas-de-tendencia-central)
-  - [Média Aritmética](#media-aritmtica)
+- [Medidas de Tendência Central](#medidas-de-tendência-central)
+  - [Média Aritmética](#média-aritmética)
   - [Mediana](#mediana)
   - [Moda](#moda)
 - [Medidas Separatrizes](#medidas-separatrizes)
   - [Quartis, Decis e Percentis](#quartis-decis-e-percentis)
   - [Box-plot](#box-plot)
-- [Medidas de Dispersão](#medidas-de-disperso)
-  - [Desvio Médio Absoluto](#desvio-medio-absoluto)
-  - [Variância](#variancia)
-  - [Desvio Padrão](#desvio-padrao)
-- [Distribuições de Probabilidade](#distribuiçoes-de-probabilidade)
-  - [Distribuição Binomial](#distribuiçao-binomial)
-  - [Distriubuição Poisson](#distriubuiçao-poisson)
-  - [Distribuição Normal](#distribuiçao-normal)
+- [Medidas de Dispersão](#medidas-de-dispersão)
+  - [Desvio Médio Absoluto](#desvio-médio-absoluto)
+  - [Variância](#variância)
+  - [Desvio Padrão](#desvio-padrão)
+- [Distribuições de Probabilidade](#distribuições-de-probabilidade)
+  - [Distribuição Binomial](#distribuição-binomial)
+  - [Distriubuição Poisson](#distriubuição-poisson)
+  - [Distribuição Normal](#distribuição-normal)
 - [Amostragem](#amostragem)
-  - [Amostragem Aleatória Simples](#amostragem-aleatoria-simples)
-- [Estimação](#estimaçao)
+  - [Amostragem Aleatória Simples](#amostragem-aleatória-simples)
+- [Estimação](#estimação)
   - [Teorema do Limite Central](#teorema-do-limite-central)
-  - [Níveis de Confiança e Significância](#niveis-de-confiança-e-significancia)
+  - [Níveis de Confiança e Significância](#níveis-de-confiança-e-significância)
   - [Erro Inferencial](#erro-inferencial)
   - [Intervalos de Confiança](#intervalos-de-confiança)
-- [Cálculo do Tamanho da Amostra](#calculo-do-tamanho-da-amostra)
-  - [Variáveis Quantitativas e População Infinita](#variaveis-quantitativas-e-populaço-infinita)
-  - [Variáveis Quantitativas e População Finita](#variaveis-quantitativas-e-populaço-finita)
+- [Cálculo do Tamanho da Amostra](#cálculo-do-tamanho-da-amostra)
+  - [Variáveis Quantitativas e População Infinita](#variáveis-quantitativas-e-população-infinita)
+  - [Variáveis Quantitativas e População Finita](#variáveis-quantitativas-e-população-finita)
   
 ## Tipos de Dados
-***
 
 ### Variáveis Quantitativas
-***
+
 São representadas por meio de números resultantes de uma contagem ou mensuração. Elas podem ser de dois tipos:
 
 #### Variáveis Quantitativas Discretas
@@ -52,7 +47,7 @@ Os valores representam um conjunto finito ou enumerável de números, e que resu
 Os valores pertencem a um intervalo de números reais e representam uma mensuração como por exemplo altura ou peso de uma pessoa. Nesses casos números fracionais fazem sentido. Exemplo: tempo (relógio) e pressão arterial.
 
 ### Variáveis Qualitativas
-***
+
 Representam uma qualidade (ou atributo) de um indivíduo pesquisado, são definidas por várias categorias. São características que não possuem valores quantitativos. Essas variáveis podem ser de dois tipos:
 
 #### Variável Qualitativa Nominal
@@ -571,7 +566,8 @@ norm.interval(alpha = 0.95, loc = media_amostra, scale = sigma)
 
 ### Variáveis Quantitativas e População Infinita
 ***
-$$e = z \frac{\sigma}{\sqrt{n}}$$
+![formula](https://render.githubusercontent.com/render/math?math=e\=z \frac{\sigma}{\sqrt{n}})
+
 #### Com desvio padrão conhecido
 $$n = \left(z\frac{\sigma}{e}\right)^2$$
 
@@ -593,10 +589,10 @@ int(n.round())
 ### Variáveis Quantitativas e População Finita
 ***
 #### Com desvio padrão conhecido
-$$n = \frac{z^2 \sigma^2 N}{z^2 \sigma^2 + e^2(N-1)}$$
+![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20%5Csigma%5E2%20N%7D%7Bz%5E2%20%5Csigma%5E2%20%2B%20e%5E2(N-1)%7D%7D)
 
 #### Com desvio padrão desconhecido
-$$n = \frac{z^2 s^2 N}{z^2 s^2 + e^2(N-1)}$$
+![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20s%5E2%20N%7D%7Bz%5E2%20s%5E2%20%2B%20e%5E2(N-1)%7D)
 
 Onde:
 * $N$ = tamanho da população
