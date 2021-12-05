@@ -251,8 +251,7 @@ df.quantile([i / 10 for i in range(1, 100)])
 
 O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por IIQ. As posições relativas de Q1, Mediana e Q3 dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
 
-![img](https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img005.png)
-<img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img005.png' width='65%' align='center'>
+<img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img005'>
 
 #### Plotando um Boxplot
 ```python
@@ -333,7 +332,8 @@ df.std()
 ### Distribuição Binomial
 Um evento **binomial** é caracterizado pela possibilidade de ocorrência de apenas duas categorias. Estas categorias somadas representam todo o espaço amostral, sendo também mutuamente excludentes, ou seja, a ocorrência de uma implica na não ocorrência da outra.
 
-Em análises estatísticas o uso mais comum da distribuição binomial é na solução de problemas que envolvem situações de **sucesso** e **fracasso**.
+Em análises estatísticas o uso mais comum da distribuição binomial é na solução de  C
+s que envolvem situações de **sucesso** e **fracasso**.
 
 ![formula](https://render.githubusercontent.com/render/math?math=P(k)%3D%5Cbinom%7Bn%7D%7Bk%7D%20p%5Ek%20q%5E%7Bn-k%7D)
 
@@ -421,10 +421,11 @@ Onde:
 
 
 A probabilidade é obtida a partir da área sob a curva, delimitada pelos limites inferior e superior especificados. Um exemplo pode ser visto na figura abaixo.
-![alt text](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img002.png)
+
+<img src='https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img002.png'>
 
 #### Problema A - Identificação da área sob a curva
-<img src='https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img004.png' width='350px'>
+<img src='https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img004.png'>
 
 ```python
 from scipy.stats import norm
