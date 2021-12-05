@@ -249,8 +249,9 @@ df.quantile([i / 10 for i in range(1, 100)])
 
 ### Box-plot
 
-O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por $IIQ$. As posições relativas de $Q1$, $Mediana$ e $Q3$ dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
+O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por IIQ. As posições relativas de Q1, Mediana e Q3 dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
 
+![img](https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img005.png)
 <img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img005.png' width='65%' align='center'>
 
 #### Plotando um Boxplot
@@ -406,7 +407,7 @@ A distribuição normal é uma das mais utilizadas em estatística. É uma distr
 1. É simétrica em torno da média;
 2. A área sob a curva corresponde à proporção 1 ou 100%;
 3. As medidas de tendência central (média, mediana e moda) apresentam o mesmo valor;
-4. Os extremos da curva tendem ao infinito em ambas as direções e, teoricamente, jamais tocam o eixo $x$;
+4. Os extremos da curva tendem ao infinito em ambas as direções e, teoricamente, jamais tocam o eixo ![formula](https://render.githubusercontent.com/render/math?math=x);
 5. O desvio padrão define o achatamento e largura da distribuição. Curvas mais largas e mais achatadas apresentam valores maiores de desvio padrão;
 6. A distribuição é definida por sua média e desvio padrão;
 7. A probabilidade sempre será igual à área sob a curva, delimitada pelos limites inferior e superior.
@@ -474,7 +475,9 @@ amostra = df.sample(n = 1000, random_state = 101)
 
 ### Teorema do Limite Central
 
-> O **Teorema do Limite Central** afirma que, com o aumento do tamanho da amostra, a distribuição das médias amostrais se aproxima de uma distribuição normal com média igual à média da população e desvio padrão igual ao desvio padrão da variável original dividido pela raiz quadrada do tamanho da amostra. Este fato é assegurado para $n$ maior ou igual a 30.
+> O **Teorema do Limite Central** afirma que, com o aumento do tamanho da amostra, a distribuição das médias amostrais se aproxima de uma distribuição normal com média igual à média da população e desvio padrão igual ao desvio padrão da variável original dividido pela raiz quadrada do tamanho da amostra. Este fato é assegurado para ![formula](https://render.githubusercontent.com/render/math?math=n)
+
+ maior ou igual a 30.
 
 ![formula](https://render.githubusercontent.com/render/math?math=%5Csigma_%5Cbar%7Bx%7D%20%3D%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
@@ -486,16 +489,16 @@ O desvio padrão das médias amostrais é conhecido como **erro padrão da médi
 
 ### Níveis de Confiança e Significância
 
-O **nível de confiança** ($1 - \alpha$) representa a probabilidade de acerto da estimativa. De forma complementar o **nível de significância** ($\alpha$) expressa a probabilidade de erro da estimativa.
+O **nível de confiança** (![formula](https://render.githubusercontent.com/render/math?math=1%20-%20%5Calpha)) representa a probabilidade de acerto da estimativa. De forma complementar o **nível de significância** (![formula](https://render.githubusercontent.com/render/math?math=%5Calpha)) expressa a probabilidade de erro da estimativa.
 
 O **nível de confiança** representa o grau de confiabilidade do resultado da estimativa estar dentro de determinado intervalo. Quando fixamos em uma pesquisa um **nível de confiança** de 95%, por exemplo, estamos assumindo que existe uma probabilidade de 95% dos resultados da pesquisa representarem bem a realidade, ou seja, estarem corretos.
 
 O **nível de confiança** de uma estimativa pode ser obtido a partir da área sob a curva normal como ilustrado na figura abaixo.
 
-![alt text](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img007.png)
+![img](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img007.png)
 
 ### Erro Inferencial
-O **erro inferencial** é definido pelo **desvio padrão das médias amostrais** $\sigma_\bar{x}$ e pelo **nível de confiança** determinado para o processo.
+O **erro inferencial** é definido pelo **desvio padrão das médias amostrais** ![formula](https://render.githubusercontent.com/render/math?math=%5Csigma_%5Cbar%7Bx%7D) e pelo **nível de confiança** determinado para o processo.
 ![formula](https://render.githubusercontent.com/render/math?math=e%20%3D%20z%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
 ### Intervalos de Confiança
@@ -510,7 +513,7 @@ O **erro inferencial** é definido pelo **desvio padrão das médias amostrais**
 
 #### Valores de z para os níveis de confiança mais utilizados
 
-|Nível de<br>confiança|Valor da área sob<br>a curva normal| $z$ |
+|Nível de<br>confiança|Valor da área sob<br>a curva normal| z |
 |:----------------:|:---------------------------------:|:---:|
 |90%               |0,95                               |1,645|
 |95%               |0,975                              |1,96 |
@@ -575,11 +578,11 @@ int(n.round())
 ![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20s%5E2%20N%7D%7Bz%5E2%20s%5E2%20%2B%20e%5E2(N-1)%7D)
 
 Onde:
-* $N$ = tamanho da população
-* $z$ = variável normal padronizada
-* $\sigma$ = desvio padrão populacional
-* $s$ = desvio padrão amostral
-* $e$ = erro inferencial
+* ![formula](https://render.githubusercontent.com/render/math?math=N) = tamanho da população
+* ![formula](https://render.githubusercontent.com/render/math?math=z) = variável normal padronizada
+* ![formula](https://render.githubusercontent.com/render/math?math=\sigma) = desvio padrão populacional
+* ![formula](https://render.githubusercontent.com/render/math?math=s) = desvio padrão amostral
+* ![formula](https://render.githubusercontent.com/render/math?math=e) = erro inferencial
 
 #### Calculando o Tamanho da Amostra
 ```python
