@@ -15,7 +15,7 @@
 - [Medidas Separatrizes](#medidas-separatrizes)
   - [Quartis, Decis e Percentis](#quartis-decis-e-percentis)
   - [Box-plot](#box-plot)
-- [Medidas de Dispersão](#medidas-de-dispersão)
+- [Medidas de](#medidas-de-dispersão)
   - [Desvio Médio Absoluto](#desvio-médio-absoluto)
   - [Variância](#variância)
   - [Desvio Padrão](#desvio-padrão)
@@ -56,12 +56,10 @@ Quando não existe nenhuma ordenação nas possíveis representações. Exemplos
 #### Variável Qualitativa Ordinal
 Quando apresentam uma ordem nos seus resultados. Exemplos: escolaridade (1, 2, 3 graus), mês de observação (janeiro, fevereiro, …, dezembro.)
 
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Distribuição de Frequências
-***
-
 
 ### Distribuição de Frequências para Variáveis Qualitativas
-***
 ```python
 import pandas as pd
 
@@ -72,7 +70,6 @@ dist_freq_qualitativas = pd.DataFrame({'Frequência': frequencia, 'Porcentagem (
 ```
 
 ### Distribuição de Frequências para Variáveis Quantitativas (Classes Personalizadas)
-***
 
 #### Especificar os Limites de cada Classe
 ```python
@@ -106,12 +103,11 @@ dist_freq_quantitativas_personalizadas = pd.DataFrame(
 ```
 
 ### Distribuição de Frequências para Variáveis Quantitativas (Classes de Amplitude fixa)
-***
 
 #### Definindo Número de Classes
 
 Regra de Sturges
-$$k = 1 + \frac {10}{3}\log_{10}n$$
+![formula](https://render.githubusercontent.com/render/math?math=k%20%3D%201%20%2B%20%5Cfrac%20%7B10%7D%7B3%7D%5Clog_%7B10%7Dn)
 
 ```python
 import pandas as pd
@@ -148,7 +144,6 @@ dist_freq_quantitativas_amplitude_fixa = pd.DataFrame(
 ```
 
 ### Histograma
-***
 
 O <b>HISTOGRAMA</b> é a representação gráfica de uma distribuição de frequências. É um gráfico formado por um conjunto de retângulos colocados lado a lado, onde a área de cada retângulo é proporcional à frequência da classe que ele representa.
 
@@ -168,19 +163,17 @@ ax
 ```python
 df.Nome_da_Variável.hist(bins = 50, figsize=(12, 6))
 ```
-
+[Voltar ao Topo](#tabela-de-conteúdo)
 ##  Medidas de Tendência Central
-***
 
 ### Média Aritmética
-***
-É representada por $\mu$ quando se refere à população e por $\bar{X}$ quando se refere à amostra
+É representada por ![formula](https://render.githubusercontent.com/render/math?math=\mu) quando se refere à população e por ![formula](https://render.githubusercontent.com/render/math?math=\bar{X}) quando se refere à amostra
 
-$$\mu = \frac 1n\sum_{i=1}^{n}X_i$$ 
+![formula](https://render.githubusercontent.com/render/math?math=%5Cmu%20%3D%20%5Cfrac%201n%5Csum_%7Bi%3D1%7D%5E%7Bn%7DX_i) 
 
 onde:
-* $n$ = número de observações (registros)
-* $X_i$ = valor da i-ésima observação (registro)
+* ![formula](https://render.githubusercontent.com/render/math?math=n) = número de observações (registros)
+* ![formula](https://render.githubusercontent.com/render/math?math=X_i) = valor da i-ésima observação (registro)
 
 #### Calculando a Média Aritmética
 ```python
@@ -189,28 +182,27 @@ df.mean()
 ```
 
 ### Mediana
-***
 
 Para obtermos a mediana de uma conjunto de dados devemos proceder da seguinte maneira:
 1. Ordenar o conjunto de dados;
-2. Identificar o número de observações (registros) do conjunto de dados ($n$);
+2. Identificar o número de observações (registros) do conjunto de dados (![formula](https://render.githubusercontent.com/render/math?math=n));
 3. Identicar o elemento mediano:
 
-> Quando $n$ for ímpar, a posição do elemento mediano será obtida da seguinte forma:
+> Quando ![formula](https://render.githubusercontent.com/render/math?math=n) for ímpar, a posição do elemento mediano será obtida da seguinte forma:
 
-$$Elemento_{Md} = \frac{n+1}2$$
+![formula](https://render.githubusercontent.com/render/math?math=Elemento_%7BMd%7D%20%3D%20%5Cfrac%7Bn%2B1%7D2)
 
-> Quando $n$ for par, a posição do elemento mediano será obtida da seguinte forma:
+> Quando ![formula](https://render.githubusercontent.com/render/math?math=n) for par, a posição do elemento mediano será obtida da seguinte forma:
 
-$$Elemento_{Md} = \frac{n}2$$
+![formula](https://render.githubusercontent.com/render/math?math=Elemento_%7BMd%7D%20%3D%20%5Cfrac%7Bn%7D2)
 
 #### Obtendo a Mediana:
 
-> Quando $n$ for ímpar:
-$$Md = X_{Elemento_{Md}}$$
+> Quando ![formula](https://render.githubusercontent.com/render/math?math=n) for ímpar:
+![formula](https://render.githubusercontent.com/render/math?math=Md%20%3D%20X_%7BElemento_%7BMd%7D%7D)
 
-> Quando $n$ for par:
-$$Md = \frac{X_{Elemento_{Md}} + X_{Elemento_{Md}+1}}2$$
+> Quando ![formula](https://render.githubusercontent.com/render/math?math=n) for par:
+![formula](https://render.githubusercontent.com/render/math?math=Md%20%3D%20%5Cfrac%7BX_%7BElemento_%7BMd%7D%7D%20%2B%20X_%7BElemento_%7BMd%7D%2B1%7D%7D2)
 
 #### Calculando a Mediana
 ```python
@@ -220,7 +212,6 @@ df.quantile()
 df.median()
 ```
 ### Moda
-***
 Pode-se definir a moda como sendo o valor mais frequente de um conjunto de dados. A moda é bastante utilizada para dados qualitativos.
 
 #### Calculando a Moda
@@ -228,12 +219,11 @@ Pode-se definir a moda como sendo o valor mais frequente de um conjunto de dados
 import pandas as pd
 df.mode()
 ```
-
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Medidas Separatrizes
-***
 
 ### Quartis, Decis e Percentis
-***
+
 Há uma série de medidas de posição semelhantes na sua concepção à mediana, embora não sejam medidas de tendência central. Como se sabe, a mediana divide a distribuição em duas partes iguais quanto ao número de elementos de cada parte. Já os quartis permitem dividir a distribuição em quatro partes iguais quanto ao número de elementos de cada uma; os decis em dez partes e os centis em cem partes iguais.
 
 #### Calculando os Quartis
@@ -258,7 +248,6 @@ df.quantile([i / 10 for i in range(1, 100)])
 ```
 
 ### Box-plot
-***
 
 O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por $IIQ$. As posições relativas de $Q1$, $Mediana$ e $Q3$ dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
 
@@ -284,15 +273,14 @@ ax
 ```
 <img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img006.png' width='80%' align='center'>
 
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Medidas de Dispersão
-***
 
 Embora as medidas de posição forneçam uma sumarização bastante importante dos dados, elas podem não ser suficientes para caracterizar conjuntos distintos, especialmente quando as observações de determinada distribuição apresentarem dados muito dispersos.
 
 ### Desvio Médio Absoluto
-***
 
-$$DM = \frac 1n\sum_{i=1}^{n}|X_i-\bar{X}|$$
+![formula](https://render.githubusercontent.com/render/math?math=DM%20%3D%20%5Cfrac%201n%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%7CX_i-%5Cbar%7BX%7D%7C)
 
 
 O desvio absoluto médio de um conjunto de dados é a média das distâncias entre cada dado e a média. Ele nos dá uma noção da variabilidade em um conjunto de dados
@@ -305,17 +293,16 @@ df.mad()
 ```
 
 ### Variância
-***
 
 A variância é construída a partir das diferenças entre cada observação e a média dos dados, ou seja, o desvio em torno da média. No cálculo da variância, os desvios em torno da média são elevados ao quadrado.
 
 #### Variância Populacional
 
-$$\sigma^2 = \frac 1n\sum_{i=1}^{n}(X_i-\mu)^2$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Csigma%5E2%20%3D%20%5Cfrac%201n%5Csum_%7Bi%3D1%7D%5E%7Bn%7D(X_i-%5Cmu)%5E2)
 
 #### Variância Amostral
 
-$$S^2 = \frac 1{n-1}\sum_{i=1}^{n}(X_i-\bar{X})^2$$
+![formula](https://render.githubusercontent.com/render/math?math=S%5E2%20%3D%20%5Cfrac%201%7Bn-1%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D(X_i-%5Cbar%7BX%7D)%5E2)
 
 #### Calculando a Variância
 ```python
@@ -324,49 +311,46 @@ df.var()
 ```
 
 ### Desvio Padrão
-***
 Uma das restrições da variância é o fato de fornecer medidas em quadrados das unidades originais - a variância de medidas de comprimento, por exemplo, é em unidades de área. Logo, o fato de as unidades serem diferentes dificulta a comparação da dispersão com as variáveis que a definem. Um modo de eliminar essa dificuldade é considerar sua raiz quadrada.
 
 #### Desvio Padrão Populacional
 
-$$\sigma = \sqrt{\frac 1n\sum_{i=1}^{n}(X_i-\mu)^2} \Longrightarrow \sigma = \sqrt{\sigma^2}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Csigma%20%3D%20%5Csqrt%7B%5Cfrac%201n%5Csum_%7Bi%3D1%7D%5E%7Bn%7D(X_i-%5Cmu)%5E2%7D%20%5CLongrightarrow%20%5Csigma%20%3D%20%5Csqrt%7B%5Csigma%5E2%7D)
 
 #### Desvio Padrão Amostral
 
-$$S = \sqrt{\frac 1{n-1}\sum_{i=1}^{n}(X_i-\bar{X})^2} \Longrightarrow S = \sqrt{S^2}$$
+![formula](https://render.githubusercontent.com/render/math?math=S%20%3D%20%5Csqrt%7B%5Cfrac%201%7Bn-1%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D(X_i-%5Cbar%7BX%7D)%5E2%7D%20%5CLongrightarrow%20S%20%3D%20%5Csqrt%7BS%5E2%7D)
 
 #### Calculando o Desvio Padrão
 ```python
 import pandas as pd
 df.std()    
 ```
-
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Distribuições de Probabilidade
-***
 
 ### Distribuição Binomial
-***
 Um evento **binomial** é caracterizado pela possibilidade de ocorrência de apenas duas categorias. Estas categorias somadas representam todo o espaço amostral, sendo também mutuamente excludentes, ou seja, a ocorrência de uma implica na não ocorrência da outra.
 
 Em análises estatísticas o uso mais comum da distribuição binomial é na solução de problemas que envolvem situações de **sucesso** e **fracasso**.
 
-$$P(k)=\binom{n}{k} p^k q^{n-k}$$
+![formula](https://render.githubusercontent.com/render/math?math=P(k)%3D%5Cbinom%7Bn%7D%7Bk%7D%20p%5Ek%20q%5E%7Bn-k%7D)
 
 Onde:
 
-* $p$ = probabilidade de sucesso
-* $q = (1 - p)$ = probabilidade de fracasso
-* $n$ = número de eventos estudados
-* $k$ = número de eventos desejados que tenham sucesso
+* ![formula](https://render.githubusercontent.com/render/math?math=p) = probabilidade de sucesso
+* ![formula](https://render.githubusercontent.com/render/math?math=q%20%3D%20(1%20-%20p)) = probabilidade de fracasso
+* ![formula](https://render.githubusercontent.com/render/math?math=n) = número de eventos estudados
+* ![formula](https://render.githubusercontent.com/render/math?math=k) = número de eventos desejados que tenham sucesso
 
 O valor esperado ou a média da distribuição binomial é igual ao número de experimentos realizados multiplicado pela chance de ocorrência do evento.
 
 #### Média da Distribuição Binomial
-$$\mu = n \times p$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Cmu%20%3D%20n%20%5Ctimes%20p)
 
 #### Desvio Padrão da Distribuição Binomial
 O desvio padrão é o produto entre o número de experimentos, a probabilidade de sucesso e a probabilidade de fracasso.
-$$\sigma = \sqrt{n \times p \times q}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Csigma%20%3D%20%5Csqrt%7Bn%20%5Ctimes%20p%20%5Ctimes%20q%7D)
 
 #### Calculando a Distribuição Binomial
 ```python
@@ -387,23 +371,23 @@ binom.sf(4, n, p)
 ```
 
 ### Distriubuição Poisson
-***
+
 É empregada para descrever o número de ocorrências em um intervalo de tempo ou espaço específico. Os eventos são caracterizados pela possibilidade de contagem dos sucessos, mas a não possibilidade de contagem dos fracassos.
 
 Como exemplos de processos onde podemos aplicar a distribuição de Poisson temos a determinação do número de clientes que entram em uma loja em determinada hora, o número de carros que chegam em um drive-thru de uma lanchonete na hora do almoço, a determinação do número de acidentes registrados em um trecho de estrada etc.
 
-$$P(k) = \frac{e^{-\mu}(\mu)^k}{k!}$$
+![formula](https://render.githubusercontent.com/render/math?math=P(k)%20%3D%20%5Cfrac%7Be%5E%7B-%5Cmu%7D(%5Cmu)%5Ek%7D%7Bk!%7D)
 
 Onde:
-* $e$ = constante cujo valor aproximado é 2,718281828459045
-* $\mu$ = representa o número médio de ocorrências em um determinado intervalo de tempo ou espaço
-* $k$ = número de sucessos no intervalo desejado
+* ![formula](https://render.githubusercontent.com/render/math?math=e) = constante cujo valor aproximado é 2,718281828459045
+* ![formula](https://render.githubusercontent.com/render/math?math=\mu) = representa o número médio de ocorrências em um determinado intervalo de tempo ou espaço
+* ![formula](https://render.githubusercontent.com/render/math?math=k) = número de sucessos no intervalo desejado
 
 #### Média da Distribuição Poisson
-$$\mu$$
+![formula](https://render.githubusercontent.com/render/math?math=\mu)
 
 #### Desvio Padrão da Distribuição Poisson
-$$\sigma = \sqrt{\mu}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Csigma%20%3D%20%5Csqrt%7B%5Cmu%7D)
 
 #### Calculando a Distribuição Poisson
 ```python
@@ -427,12 +411,12 @@ A distribuição normal é uma das mais utilizadas em estatística. É uma distr
 6. A distribuição é definida por sua média e desvio padrão;
 7. A probabilidade sempre será igual à área sob a curva, delimitada pelos limites inferior e superior.
 
-$$f(x) = \frac{1}{\sqrt{2\pi\sigma}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$$
+![formula](https://render.githubusercontent.com/render/math?math=f(x)%20%3D%20%5Cfrac%7B1%7D%7B%5Csqrt%7B2%5Cpi%5Csigma%7D%7De%5E%7B-%5Cfrac%7B1%7D%7B2%7D%5Cleft(%5Cfrac%7Bx-%5Cmu%7D%7B%5Csigma%7D%5Cright)%5E2%7D)
 
 Onde:
-* $x$ = variável normal
-* $\sigma$ = desvio padrão
-* $\mu$ = média
+* ![formula](https://render.githubusercontent.com/render/math?math=x) = variável normal
+* ![formula](https://render.githubusercontent.com/render/math?math=\sigma) = desvio padrão
+* ![formula](https://render.githubusercontent.com/render/math?math=\mu) = média
 
 
 A probabilidade é obtida a partir da área sob a curva, delimitada pelos limites inferior e superior especificados. Um exemplo pode ser visto na figura abaixo.
@@ -471,11 +455,10 @@ Z = (1.9 - media) / desvio_padrao
 probabilidade = 1 - norm.cdf(Z)
 ```
 
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Amostragem
-***
 
 ### Amostragem Aleatória Simples
-*** 
 
 ```python
 # Return a random sample of items from an axis of object.
@@ -486,23 +469,22 @@ probabilidade = 1 - norm.cdf(Z)
 amostra = df.sample(n = 1000, random_state = 101)
 ```
 
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Estimação
-***
 
 ### Teorema do Limite Central
-***
+
 > O **Teorema do Limite Central** afirma que, com o aumento do tamanho da amostra, a distribuição das médias amostrais se aproxima de uma distribuição normal com média igual à média da população e desvio padrão igual ao desvio padrão da variável original dividido pela raiz quadrada do tamanho da amostra. Este fato é assegurado para $n$ maior ou igual a 30.
 
-$$\sigma_\bar{x} = \frac{\sigma}{\sqrt{n}}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Csigma_%5Cbar%7Bx%7D%20%3D%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
 O desvio padrão das médias amostrais é conhecido como **erro padrão da média**
 
 > O Teorema do Limite Central afirma que, com o aumento do tamanho da amostra, a distribuição das médias amostrais se aproxima de uma distribuição normal com média igual à média da população e **desvio padrão igual ao desvio padrão da variável original dividido pela raiz quadrada do tamanho da amostra**. Este fato é assegurado para n maior ou igual a 30.
 
-$$\sigma_\bar{x} = \frac{\sigma}{\sqrt{n}}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Csigma_%5Cbar%7Bx%7D%20%3D%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
 ### Níveis de Confiança e Significância
-***
 
 O **nível de confiança** ($1 - \alpha$) representa a probabilidade de acerto da estimativa. De forma complementar o **nível de significância** ($\alpha$) expressa a probabilidade de erro da estimativa.
 
@@ -513,22 +495,20 @@ O **nível de confiança** de uma estimativa pode ser obtido a partir da área s
 ![alt text](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img007.png)
 
 ### Erro Inferencial
-***
 O **erro inferencial** é definido pelo **desvio padrão das médias amostrais** $\sigma_\bar{x}$ e pelo **nível de confiança** determinado para o processo.
-$$e = z \frac{\sigma}{\sqrt{n}}$$
+![formula](https://render.githubusercontent.com/render/math?math=e%20%3D%20z%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
 ### Intervalos de Confiança
-***
 
 #### Com desvio padrão populacional conhecido
 
-$$\mu = \bar{x} \pm z\frac{\sigma}{\sqrt{n}}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Cmu%20%3D%20%5Cbar%7Bx%7D%20%5Cpm%20z%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
 #### Com desvio padrão populacional desconhecido
 
-$$\mu = \bar{x} \pm z\frac{s}{\sqrt{n}}$$
+![formula](https://render.githubusercontent.com/render/math?math=%5Cmu%20%3D%20%5Cbar%7Bx%7D%20%5Cpm%20z%5Cfrac%7Bs%7D%7B%5Csqrt%7Bn%7D%7D)
 
-#### Valores de $z$ para os níveis de confiança mais utilizados
+#### Valores de z para os níveis de confiança mais utilizados
 
 |Nível de<br>confiança|Valor da área sob<br>a curva normal| $z$ |
 |:----------------:|:---------------------------------:|:---:|
@@ -561,24 +541,24 @@ intervalo = (
 norm.interval(alpha = 0.95, loc = media_amostra, scale = sigma)
 ```
 
+[Voltar ao Topo](#tabela-de-conteúdo)
 ## Cálculo do Tamanho da Amostra
-***
 
 ### Variáveis Quantitativas e População Infinita
-***
+
 ![formula](https://render.githubusercontent.com/render/math?math=e\=z \frac{\sigma}{\sqrt{n}})
 
 #### Com desvio padrão conhecido
-$$n = \left(z\frac{\sigma}{e}\right)^2$$
+![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cleft(z%5Cfrac%7B%5Csigma%7D%7Be%7D%5Cright)%5E2)
 
 #### Com desvio padrão desconhecido
-$$n = \left(z\frac{s}{e}\right)^2$$
+![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cleft(z%5Cfrac%7Bs%7D%7Be%7D%5Cright)%5E2)
 
 Onde:
-* $z$ = variável normal padronizada
-* $\sigma$ = desvio padrão populacional
-* $s$ = desvio padrão amostral
-* $e$ = erro inferencial
+* ![formula](https://render.githubusercontent.com/render/math?math=z) = variável normal padronizada
+* ![formula](https://render.githubusercontent.com/render/math?math=\sigma) = desvio padrão populacional
+* ![formula](https://render.githubusercontent.com/render/math?math=s) = desvio padrão amostral
+* ![formula](https://render.githubusercontent.com/render/math?math=e) = erro inferencial
 
 #### Calculando o Tamanho da Amostra
 ```python
@@ -587,7 +567,7 @@ int(n.round())
 ```
 
 ### Variáveis Quantitativas e População Finita
-***
+
 #### Com desvio padrão conhecido
 ![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20%5Csigma%5E2%20N%7D%7Bz%5E2%20%5Csigma%5E2%20%2B%20e%5E2(N-1)%7D%7D)
 
@@ -606,3 +586,5 @@ Onde:
 n = ((z**2) * (s**2) * (N)) / (((z**2) * (s**2)) + ((e**2) * (N - 1)))
 int(n.round())
 ```
+
+[Voltar ao Topo](#tabela-de-conteúdo)
