@@ -549,7 +549,7 @@ norm.interval(alpha = 0.95, loc = media_amostra, scale = sigma)
 
 ### Variáveis Quantitativas e População Infinita
 
-![formula](https://render.githubusercontent.com/render/math?math=e\=z \frac{\sigma}{\sqrt{n}})
+![formula](https://render.githubusercontent.com/render/math?math=e%20%3D%20z%20%5Cfrac%7B%5Csigma%7D%7B%5Csqrt%7Bn%7D%7D)
 
 #### Com desvio padrão conhecido
 ![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cleft(z%5Cfrac%7B%5Csigma%7D%7Be%7D%5Cright)%5E2)
@@ -572,7 +572,7 @@ int(n.round())
 ### Variáveis Quantitativas e População Finita
 
 #### Com desvio padrão conhecido
-![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20%5Csigma%5E2%20N%7D%7Bz%5E2%20%5Csigma%5E2%20%2B%20e%5E2(N-1)%7D%7D)
+![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20%5Csigma%5E2%20N%7D%7Bz%5E2%20%5Csigma%5E2%20%2B%20e%5E2(N-1)%7D)
 
 #### Com desvio padrão desconhecido
 ![formula](https://render.githubusercontent.com/render/math?math=n%20%3D%20%5Cfrac%7Bz%5E2%20s%5E2%20N%7D%7Bz%5E2%20s%5E2%20%2B%20e%5E2(N-1)%7D)
