@@ -251,7 +251,7 @@ df.quantile([i / 10 for i in range(1, 100)])
 
 O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por IIQ. As posições relativas de Q1, Mediana e Q3 dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
 
-<img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img005'>
+![img](img005.png)
 
 #### Plotando um Boxplot
 ```python
@@ -271,7 +271,7 @@ ax.set_title('Título', fontsize=18)
 ax.set_xlabel('Legenda eixo X', fontsize=14)
 ax
 ```
-<img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img006.png' width='80%' align='center'>
+![img](img006.png)
 
 [Voltar ao Topo](#tabela-de-conteúdo)
 ## Medidas de Dispersão
@@ -401,7 +401,7 @@ print('%0.8f' % probabilidade)
 ### Distribuição Normal
 A distribuição normal é uma das mais utilizadas em estatística. É uma distribuição contínua, onde a distribuição de frequências de uma variável quantitativa apresenta a forma de sino e é simétrica em relação a sua média.
 
-![Normal](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img001.png)
+![Normal](img001.png)
 
 #### Características
 1. É simétrica em torno da média;
@@ -422,10 +422,10 @@ Onde:
 
 A probabilidade é obtida a partir da área sob a curva, delimitada pelos limites inferior e superior especificados. Um exemplo pode ser visto na figura abaixo.
 
-<img src='https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img002.png'>
+![img](img002.png)
 
 #### Problema A - Identificação da área sob a curva
-<img src='https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img004.png'>
+![img](img004.png)
 
 ```python
 from scipy.stats import norm
@@ -434,7 +434,7 @@ probabilidade = norm.cdf(Z)
 ```
 
 #### Problema B - Identificação da área sob a curva
-<img src='https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img005.png' width='350px'>
+![img](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img005.png)
 
 ```python
 from scipy.stats import norm
