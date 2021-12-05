@@ -434,7 +434,7 @@ probabilidade = norm.cdf(Z)
 ```
 
 #### Problema B - Identificação da área sob a curva
-![img](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img005.png)
+![img](img015.png)
 
 ```python
 from scipy.stats import norm
@@ -496,7 +496,7 @@ O **nível de confiança** representa o grau de confiabilidade do resultado da e
 
 O **nível de confiança** de uma estimativa pode ser obtido a partir da área sob a curva normal como ilustrado na figura abaixo.
 
-![img](https://caelum-online-public.s3.amazonaws.com/1178-estatistica-parte2/01/img007.png)
+![img](img007.png)
 
 ### Erro Inferencial
 O **erro inferencial** é definido pelo **desvio padrão das médias amostrais** ![formula](https://render.githubusercontent.com/render/math?math=%5Csigma_%5Cbar%7Bx%7D) e pelo **nível de confiança** determinado para o processo.
