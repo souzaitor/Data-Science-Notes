@@ -23,7 +23,21 @@
   - [Desvio Médio Absoluto](#desvio-medio-absoluto)
   - [Variância](#variancia)
   - [Desvio Padrão](#desvio-padrao)
-
+- [Distribuições de Probabilidade](#distribuiçoes-de-probabilidade)
+  - [Distribuição Binomial](#distribuiçao-binomial)
+  - [Distriubuição Poisson](#distriubuiçao-poisson)
+  - [Distribuição Normal](#distribuiçao-normal)
+- [Amostragem](#amostragem)
+  - [Amostragem Aleatória Simples](#amostragem-aleatoria-simples)
+- [Estimação](#estimaçao)
+  - [Teorema do Limite Central](#teorema-do-limite-central)
+  - [Níveis de Confiança e Significância](#niveis-de-confiança-e-significancia)
+  - [Erro Inferencial](#erro-inferencial)
+  - [Intervalos de Confiança](#intervalos-de-confiança)
+- [Cálculo do Tamanho da Amostra](#calculo-do-tamanho-da-amostra)
+  - [Variáveis Quantitativas e População Infinita](#variaveis-quantitativas-e-populaço-infinita)
+  - [Variáveis Quantitativas e População Finita](#variaveis-quantitativas-e-populaço-finita)
+  
 ## Tipos de Dados
 ***
 
