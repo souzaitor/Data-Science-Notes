@@ -251,7 +251,7 @@ df.quantile([i / 10 for i in range(1, 100)])
 
 O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers). A posição central é dada pela mediana e a dispersão por IIQ. As posições relativas de Q1, Mediana e Q3 dão uma noção da simetria da distribuição. Os comprimentos das cauda são dados pelas linhas que vão do retângulo aos valores remotos e pelos valores atípicos.
 
-![img](img005.png)
+![img1](img005.png)
 
 #### Plotando um Boxplot
 ```python
@@ -271,7 +271,7 @@ ax.set_title('Título', fontsize=18)
 ax.set_xlabel('Legenda eixo X', fontsize=14)
 ax
 ```
-![img](img006.png)
+![img2](img006.png)
 
 [Voltar ao Topo](#tabela-de-conteúdo)
 ## Medidas de Dispersão
@@ -422,10 +422,10 @@ Onde:
 
 A probabilidade é obtida a partir da área sob a curva, delimitada pelos limites inferior e superior especificados. Um exemplo pode ser visto na figura abaixo.
 
-![img](img002.png)
+![img3](img002.png)
 
 #### Problema A - Identificação da área sob a curva
-![img](img004.png)
+![img4](img004.png)
 
 ```python
 from scipy.stats import norm
@@ -434,7 +434,7 @@ probabilidade = norm.cdf(Z)
 ```
 
 #### Problema B - Identificação da área sob a curva
-![img](img015.png)
+![img5](img015.png)
 
 ```python
 from scipy.stats import norm
