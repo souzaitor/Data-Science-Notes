@@ -15,7 +15,7 @@ Repositório para compilar cursos, anotações e material relacionados a Data Sc
 [🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/introducao-python-pandas)
 
 * **📊 Curso Estatística com Python parte 1: Frequências e Medidas:**
-[📚 Curso](hthttps://cursos.alura.com.br/course/estatistica-distribuicoes-e-medidas)
+[📚 Curso](https://cursos.alura.com.br/course/estatistica-distribuicoes-e-medidas)
 [📝 Notas](https://github.com/souzaitor/Data-Science-Notes/tree/main/Curso%20Estat%C3%ADstica%20com%20Python#readme)
 [🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/estatistica-distribuicoes-e-medidas)
 
