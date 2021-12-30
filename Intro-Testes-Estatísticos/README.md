@@ -4,16 +4,16 @@
 - [Teste Z](#teste-z)
 - [Teste Z de uma amostra](#teste-z-de-uma-amostra)
 - [Teste Z de Duas Amostras](#teste-z-de-duas-amostras)
-- [Teste T](#teste-t)
-- [Teste t de uma amostra](#teste-t-de-uma-amostra)
-- [Teste t de duas amostras](#teste-t-de-duas-amostras)
-- [Descobrir intervalo de confiança com `tconfint()`](#descobrir-intervalo-de-confian-a-com--tconfint---)
+- [Teste T](#teste-T)
+- [Teste T de uma amostra](#Teste-T-de-uma-amostra)
+- [Teste T de duas amostras](#Teste-T-de-duas-amostras)
+- [Descobrir intervalo de confiança com `tconfint()`](#descobrir-intervalo-de-confian-a-com-tconfint)
 - [Teste Z em comparação com uma média](#teste-z-em-comparação-com-uma-média)
 - [Comparação de Dois Conjuntos de Amostras com Teste Z](#compara-ção-de-dois-conjuntos-de-amostras-com-teste-z)
 - [Comparação de Dois Conjuntos de Amostras com Teste T](#comparação-de-dois-conjuntos-de-amostras-com-teste-t)
-- [Comparação de Dois Conjuntos de Amostras com DescrStatsW](#comparação-de-dois-conjuntos-de-amostras-com-descrstatsw)
-- [Utilizando o `normaltest`](#utilizando-o-normaltest-)
-- [Utilizando o `ranksums`](#utilizando-o-ranksums-)
+- [Comparação de Dois Conjuntos de Amostras com `DescrStatsW`](#comparação-de-dois-conjuntos-de-amostras-com-descrstatsw)
+- [Utilizando o `normaltest`](#utilizando-o-normaltest)
+- [Utilizando o `ranksums`](#utilizando-o-ranksums)
 
 
 ## Gerar Histogramas de Maneira Cumulativa
@@ -136,7 +136,7 @@ comparacao.summary(use_t=True)
 
 [Voltar ao Topo](#Sumário)
 
-## Utilizando o `normaltest`
+## Utilizando o normaltest
 
 ```python
 from scipy.stats import normaltest
@@ -148,7 +148,7 @@ p
 
 [Voltar ao Topo](#Sumário)
 
-## Utilizando o `ranksums`
+## Utilizando o ranksums
 É um teste não paramétrico: não assume que seus dados seguem uma distribuição normal
 
 ```python
