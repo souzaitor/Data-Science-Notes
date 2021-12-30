@@ -1,6 +1,6 @@
 [![author](https://img.shields.io/badge/author-souzaitor-red)](www.linkedin.com/in/itorsouza)
 
-# �📊 Notas Data-Science
+# 📊 Notas Data-Science
 
 Repositório para compilar cursos, anotações e material relacionados a Data Science
 
