@@ -57,7 +57,7 @@ Os testes t são uma forma estatística de testar uma hipótese quando:
 
 [Voltar ao Topo](#Sumário)
 
-## Teste t de uma amostra
+## Teste T de uma amostra
 
 Realizamos um teste t de uma amostra quando queremos comparar a média da amostra com a média da população. 
 
@@ -70,7 +70,7 @@ Realizamos um teste t de uma amostra quando queremos comparar a média da amostr
 
 [Voltar ao Topo](#Sumário)
 
-## Teste t de duas amostras
+## Teste T de duas amostras
 
 Realizamos um teste t de duas amostras quando queremos comparar a média de duas amostras.
 
