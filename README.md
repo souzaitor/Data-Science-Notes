@@ -36,3 +36,9 @@ Repositório para compilar cursos, anotações e material relacionados a Data Sc
 [📚 Curso](https://cursos.alura.com.br/course/data-science-introducao-a-testes-estatisticos-com-python)
 [📝 Notas](https://github.com/souzaitor/Data-Science-Notes/blob/main/Intro-Testes-Estat%C3%ADsticos/README.md#sum%C3%A1rio)
 [🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/data-science-introducao-a-testes-estatisticos-com-python)
+
+
+* **📊 Data Visualization parte 1: introdução ao design de gráficos:**
+[📚 Curso](https://cursos.alura.com.br/course/data-visualization)
+[📝 Notas](https://github.com/souzaitor/Data-Science-Notes/tree/main/Intro-Design-Gr%C3%A1ficos)
+[🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/data-visualization)
