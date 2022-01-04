@@ -48,7 +48,7 @@ Repositório para compilar cursos, anotações e material relacionados a Data Sc
 * [🔗 Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python)
 * [🔗 Modern Pandas (Part 1)](https://tomaugspurger.github.io/modern-1-intro.html)
 * [🔗 Modern Pandas (Part 2): Method Chaining](https://tomaugspurger.github.io/method-chaining)
-* [🔗 Modern Panadas (Part 3): Indexes](https://tomaugspurger.github.io/modern-3-indexes)
+* [🔗 Modern Paadas (Part 3): Indexes](https://tomaugspurger.github.io/modern-3-indexes)
 * [🔗 Modern Pandas (Part 4): Performance](https://tomaugspurger.github.io/modern-4-performance)
 * [🔗 Modern Pandas (Part 5): Tidy Data](https://tomaugspurger.github.io/modern-5-tidy)
 * [🔗 An introduction to machine learning with scikit-learn](https://onlinestatbook.com/2/regression/intro.html)
