@@ -1,4 +1,4 @@
-[![author](https://img.shields.io/badge/author-souzaitor-red)](www.linkedin.com/in/itorsouza)
+[![author](https://img.shields.io/badge/author-souzaitor-red)](https://www.linkedin.com/in/itorsouza)
 
 # 📊 Notas Data-Science
 
