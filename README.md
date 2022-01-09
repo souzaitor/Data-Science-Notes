@@ -43,6 +43,16 @@ Repositório para compilar cursos, anotações e material relacionados a Data Sc
 [📝 Notas](https://github.com/souzaitor/Data-Science-Notes/tree/main/Intro-Design-Gr%C3%A1ficos)
 [🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/data-visualization)
 
+* **📊 Data Science: análises para saúde e medicina:**
+[📚 Curso](https://cursos.alura.com.br/course/data-science-saude-e-medicina)
+[📝 Notas](https://github.com/souzaitor/Data-Science-Notes/blob/main/Data-Science-e-Saude/Curso_Data_Science_e_Sa%C3%BAde_1.ipynb)
+[🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/data-science-saude-e-medicina)
+
+* **📊 Data Science: visualização de dados para saúde e medicina:**
+[📚 Curso](https://cursos.alura.com.br/course/data-science-visualizacao-saude-e-medicina)
+[📝 Notas](https://github.com/souzaitor/Data-Science-Notes/blob/main/Data-Science-e-Saude/Curso_Data_Science_e_Sa%C3%BAde_2.ipynb)
+[🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/data-science-visualizacao-saude-e-medicina)
+
 ## Conteúdos
 
 * [🔗 Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python)
