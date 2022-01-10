@@ -53,6 +53,12 @@ Repositório para compilar cursos, anotações e material relacionados a Data Sc
 [📝 Notas](https://github.com/souzaitor/Data-Science-Notes/blob/main/Data-Science-e-Saude/Curso_Data_Science_e_Sa%C3%BAde_2.ipynb)
 [🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/data-science-visualizacao-saude-e-medicina)
 
+
+* **📊 Data Visualization: criação de gráficos com o Matplotlib:**
+[📚 Curso](https://cursos.alura.com.br/course/customizacao-matplot)
+[📝 Notas](https://github.com/souzaitor/Data-Science-Notes/tree/main/Visualization-Matplotlib)
+[🗞️ Certificado](https://cursos.alura.com.br/certificate/heitpsouza/customizacao-matplot)
+
 ## Conteúdos
 
 * [🔗 Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python)
